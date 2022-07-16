@@ -1,0 +1,20 @@
+.input-container {
+  display: flex;
+}
+.input-box {
+  width: 70%;
+}
+.input-char {
+  width: 100%;
+  height: 40px;
+}
+.reset-button {
+  width: 100%;
+  height: 45px;
+  background: red;
+  font-weight: bolder;
+  font-size: 1em;
+}
+.button-container{
+    width: 30%;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./InputChar.css";
 
 const InputChar = ({inputChar, setInputChar }) => {
   const handleInput = (e) => {
@@ -6,17 +7,16 @@ const InputChar = ({inputChar, setInputChar }) => {
     setInputChar(e.target.value);
   };
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ width: "70%" }}>
-        <input
+    <div className='input-container'>
+      <div className='input-box'>
+        <input className='input-char'
           type='text'
         //   value={inputChar}
           onKeyUp={handleInput}
-          style={{ width: "100%",height:"40px" }}
         />
       </div>
-      <div style={{ width: "30%" }}>
-        <button style={{ width: "100%",height:"45px",background:"red",fontWeight:"bolder",fontSize:"1em" }}>Reset</button>
+      <div className='button-container'>
+        <button className='reset-button'>Reset</button>
       </div>
     </div>
   );

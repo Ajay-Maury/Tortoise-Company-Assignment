@@ -1,0 +1,8 @@
+.main-div {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 10% auto;
+  text-align: center;
+  background: teal;
+  font-size: 1.3em;
+}

@@ -1,22 +1,9 @@
 import React from "react";
+import "./ChaeacterToType.css";
 
 const ChaeacterToType = ({ char }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "90%",
-        height: "100px",
-        background: "white",
-        margin: "auto",
-        borderRadius: "5px",
-        alignItems: "center",
-              justifyContent: "center",
-              fontSize: "3em",
-              fontWeight: "bold",
-        color:"green"
-      }}
-    >
+    <div className="display-char">
       {char}
     </div>
   );

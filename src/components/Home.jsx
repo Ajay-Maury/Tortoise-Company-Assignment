@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Home.css"
 import ChaeacterToType from './ChaeacterToType'
 import Header from './Header'
 import InputChar from './InputChar'
@@ -10,16 +11,7 @@ const Home = () => {
       const [inputChar, setInputChar] = useState("");
      
   return (
-    <div
-          style={{
-          boxSizing:"border-box",
-        width: "50%",
-        margin: "10% auto",
-        textAlign: "center",
-              background: "teal",
-        fontSize:"1.3em"
-      }}
-    >
+    <div className='main-div' >
       <Header />
       <ChaeacterToType char={"A"} />
       <Timer
