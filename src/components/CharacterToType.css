@@ -1,4 +1,4 @@
-.display-char {
+.green {
   display: flex;
   width: 90%;
   height: 100px;
@@ -10,4 +10,19 @@
   font-size: 3em;
   font-weight: bold;
   color: green;
+}
+
+.red{
+  display: flex;
+  width: 90%;
+  height: 100px;
+  background: white;
+  margin: auto;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
+  color:red;
+
 }
