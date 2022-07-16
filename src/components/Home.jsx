@@ -18,7 +18,7 @@ const [bestScore,setBestScore] = useState("00:000")
   const correctCount = useRef(0);
 
   const handleReset = () => {
-    console.log("Reset", intervalId.current);
+    // console.log("Reset", intervalId.current);
     clearInterval(intervalId.current);
     setSeconds(0);
     setMinutes(0);
@@ -83,7 +83,7 @@ let score = JSON.parse(localStorage.getItem("bestScore"));
 
     
     let x = Number(bestSo.mins + "" + bestSo.sec);
-    console.log("x",x,"score",score,bestSo)
+    // console.log("x",x,"score",score,bestSo)
     if (!score || score == 0 || score>x) {
       localStorage.setItem("bestScore", JSON.stringify(bestSo));
       setChar("Suscess");
