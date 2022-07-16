@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 import "./InputChar.css";
 
-const InputChar = ({inputChar, setInputChar }) => {
-  const handleInput = (e) => {
-    console.log(e.target.value);
-    setInputChar(e.target.value);
-  };
+const InputChar = ({ inputtxt, char, handleReset, handleInput }) => {
   return (
     <div className='input-container'>
       <div className='input-box'>
-        <input className='input-char'
+        <input
+          className='input-char'
           type='text'
-        //   value={inputChar}
+          value={inputtxt}
           onKeyUp={handleInput}
+          disabled={char == "Suscess" || char == "Failure"}
         />
       </div>
       <div className='button-container'>
-        <button className='reset-button'>Reset</button>
+        <button className='reset-button' onClick={handleReset}>
+          Reset
+        </button>
       </div>
     </div>
   );
